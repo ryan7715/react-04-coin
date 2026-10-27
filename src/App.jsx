@@ -4,7 +4,7 @@ function App() {
     const [coins, setCoins] = useState([]);
 
     useEffect(() => {
-        fetch("https://api.upbit.com/V1/market/all")
+        fetch("https://api.upbit.com/v1/market/all")
             .then((response) => {
                 return response.json();
             })
